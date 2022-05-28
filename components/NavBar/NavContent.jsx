@@ -14,16 +14,16 @@ import { NavListItem } from "./NavListItem";
 
 const links = [
   {
-    label: "Buy",
-    href: "https://gy9yf2tl3uv.typeform.com/to/dE7gxSCM",
+    label: "Features",
+    href: "#features",
   },
   {
-    label: "Organizations",
-    href: "https://gy9yf2tl3uv.typeform.com/to/VzroWIJS",
+    label: "Pricing",
+    href: "#pricing",
   },
   {
-    label: "Donate",
-    href: "https://gy9yf2tl3uv.typeform.com/to/znxvWN8S",
+    label: "Email",
+    href: "mailto:info@red-herring.com",
   },
 ];
 

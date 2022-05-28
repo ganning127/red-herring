@@ -6,6 +6,7 @@ import {
   Flex,
   useColorModeValue,
   Icon,
+  Img,
   Heading
 } from "@chakra-ui/react";
 import { FaFlag, FaNewspaper } from 'react-icons/fa'
@@ -14,16 +15,18 @@ export const Features = () => {
   const Feature = (props) => {
     return (
       <Box>
-        <Icon
-          boxSize={8}
-          mb={4}
-          viewBox="0 0 18 18"
-          color={props.color}
-          aria-hidden="true"
-          as={props.icon}
-        />
+       {props.img && <Img
+            h={8}
+            src={props.img}
+        />}
+
+        {props.icon && <Icon
+            fontSize='4xl' 
+            color={props.color}
+            as={props.icon}
+        />}
         <chakra.h3
-          mb={3}
+          my={3}
           fontSize="lg"
           lineHeight="shorter"
           fontWeight="bold"
@@ -42,7 +45,7 @@ export const Features = () => {
   };
 
   return (
-    <Box   py={20}>
+    <Box py={20} id='features'>
     <Heading fontSize='5xl' color='gray.800' textAlign='center' fontWeight='extrabold'>Our Services</Heading>
         <Flex
             w="auto"
@@ -60,15 +63,15 @@ export const Features = () => {
         >
             <Feature
             title="Machine Learning to Flag Posts with Misinformation"
-            icon={FaFlag}
+            img='/logo.png'
             color='red.400'
             >
             The Red Herring flag will be displayed on social media posts that have been determined to contain misinformation. 
             </Feature>
 
             <Feature
-            title="Correcting Information"
-            icon={FaNewspaper}
+            title="Correct Information"
+            img='/Green Herring.png'
             color='green.400'
             >
                 After a flag has been issued, Red Herring reviews users who viewed the post prior to the flagging and issues an “alert” to these users that contains fact checked information provided by our partner organizations.

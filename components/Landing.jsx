@@ -5,7 +5,7 @@ import {
   useColorModeValue,
   Button,
   Stack,
-  Image,
+  Img,
   Text,
   Icon,
 } from "@chakra-ui/react";
@@ -53,6 +53,7 @@ export const Landing = () => {
         >
           <Button
             as="a"
+            href='#features'
             variant="solid"
             colorScheme="brand"
             display="inline-flex"
@@ -78,6 +79,7 @@ export const Landing = () => {
           </Button>
           <Button
             as="a"
+            href='mailto:info@red-herring.com'
             colorScheme="gray"
             display="inline-flex"
             alignItems="center"
@@ -87,7 +89,7 @@ export const Landing = () => {
             size="lg"
             cursor="pointer"
           >
-            Book a Demo
+            Get a quote
             <Icon boxSize={4} ml={1} viewBox="0 0 20 20" fill="currentColor">
               <path
                 fillRule="evenodd"
