@@ -98,7 +98,11 @@ export const Landing = () => {
               />
             </Icon>
           </Button>
+
         </Stack>
+
+        <Img src='/herring_posts.png' mx='auto' maxH='400px' />
+
       </Box>
     </Box>
   );
