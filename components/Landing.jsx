@@ -6,6 +6,7 @@ import {
   Button,
   Stack,
   Img,
+  SimpleGrid,
   Text,
   Icon,
 } from "@chakra-ui/react";
@@ -101,7 +102,12 @@ export const Landing = () => {
 
         </Stack>
 
-        <Img src='/herring_posts.png' mx='auto' maxH='400px' />
+        <SimpleGrid columns={{base: 1, md: 2}} justifyContent='center' alignItems='center'>
+
+        <Img src='/herring_posts.png'  maxH='1000px' mx='auto' />
+        <Img src='/map.png' maxH='900px' mx='auto' />
+
+        </SimpleGrid>
 
       </Box>
     </Box>
