@@ -1,9 +1,35 @@
 import { ChakraProvider } from '@chakra-ui/react'
+import { Global, css } from "@emotion/react";
+
+const GlobalStyle = ({ children }) => {
+  return (
+    <>
+      <Global
+        styles={css`
+          html {
+            min-width: 356px;
+            scroll-behavior: smooth;
+          }
+          #__next {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: #fffff;
+          }
+        `}
+      />
+      {children}
+    </>
+  );
+};
+
 
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider>
-      <Component {...pageProps} />
+      <GlobalStyle>
+        <Component {...pageProps} />
+      </GlobalStyle>
     </ChakraProvider>
   )
 }

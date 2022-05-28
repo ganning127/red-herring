@@ -35,7 +35,7 @@ export const Landing = () => {
           >
             misinformation
           </Text>{" "}
-          in one place.
+          together.
         </chakra.h1>
         <chakra.p
           px={{ base: 0, lg: 24 }}
